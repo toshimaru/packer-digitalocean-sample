@@ -1,0 +1,20 @@
+{
+  "builders": [
+    {
+      "type": "digitalocean",
+      "client_id": "your_client_id",
+      "api_key": "your_api_key",
+      "image_id": 1505447,
+      "region_id": 3,
+      "size_id": 66
+    }
+  ],
+
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "setup.sh"
+    }
+  ]
+
+}
